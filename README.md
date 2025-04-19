@@ -35,9 +35,5 @@
 }
 ```
 
-##  Export and Upload
-- Export this Collection + Environment
-- Upload to GitHub with this README
 
-##  Done!
-Send your GitHub link to `hr3.cybersuccess@gmail.com`
+
