@@ -10,7 +10,10 @@
 ### 1. Login - Valid
 - Method: `POST'
 - URL: `{{base_url}}/api/login'
-
+- {
+  "email": "{{username}}",
+  "password": "{{password}}"
+}
 -  Stores `auth_token' in environment.
 
 ### 2. Login - Invalid
@@ -20,7 +23,11 @@
 - Method: `POST'
 - URL: `{{base_url}}/api/customers/add'
 - Header: `Authorization: Bearer {{auth_token}}'
-
+{
+  "name": "API Test User",
+  "email": "apitestuser@example.com",
+  "phone": "9876543210"
+}
 
 
 
