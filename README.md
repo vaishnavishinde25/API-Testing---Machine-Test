@@ -2,18 +2,18 @@
 
 ##  Environment Setup
 - Create a new environment in Postman:
-  - `base_url`: `https://testffc.nimapinfotech.com`
-  - `username`: `siddiqshaikh1@nimapinfotech.com`
-  - `password`: `admin@123`
+  - 'base_url`: `https://testffc.nimapinfotech.com`
+  - 'username': `siddiqshaikh1@nimapinfotech.com'
+  - 'password`: `admin@123'
 
 ##  API Collection Structure
 ### 1. Login - Valid
-- Method: `POST`
-- URL: `{{base_url}}/api/login`
+- Method: `POST'
+- URL: `{{base_url}}/api/login'
 - Body:
 ```json
 {
-  "email": "{{username}}",
+"email": "{{username}}",
   "password": "{{password}}"
 }
 ```
@@ -23,9 +23,9 @@
 - Incorrect login to verify validation.
 
 ### 3. Add Customer
-- Method: `POST`
-- URL: `{{base_url}}/api/customers/add`
-- Header: `Authorization: Bearer {{auth_token}}`
+- Method: `POST'
+- URL: `{{base_url}}/api/customers/add'
+- Header: `Authorization: Bearer {{auth_token}}'
 - Body:
 ```json
 {
