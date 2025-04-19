@@ -1,0 +1,41 @@
+I have created a sample Postman Collection in JSON format containing
+
+1. Environment Setup
+-Create New Environment
+Environment Name: FFC_TestEnv
+Base URL Variable:
+Key: base_url
+Initial Value: https://testffc.nimapinfotech.com
+Use in requests like: {{base_url}}/api/login (actual path needs to be confirmed)
+
+ 2. Authentication Setup
+- Create Variables
+username: siddiqshaikh1@nimapinfotech.com
+password: admin@123
+auth_token: (set this from login response using script)
+
+ 3. Login API
+* Step 1: Login with Valid Credentials
+Method: POST
+URL: {{base_url}}/api/login (Update actual endpoint after inspecting calls)
+Headers: Content-Type: application/json
+Body (raw JSON):
+
+* Step 2: Login with Invalid Credentials
+Use the same request, change email or password to incorrect ones.
+Validate response:
+HTTP 401 or error message like "Invalid credentials"
+
+4. Add Customer API
+* Step 3: Add Customer
+Method: POST
+URL: {{base_url}}/api/customers/add (Confirm via network tab or Swagger)
+Headers:
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+ Example:
+{
+  "name": "API Test User",
+  "email": "apitestuser@example.com",
+  "phone": "9876543210"
+}
